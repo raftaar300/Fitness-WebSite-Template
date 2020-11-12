@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raman Fitness</title>
+    <style>
+        header{
+          
+           
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-image: url(img/pexels-photo-2628215.jpeg);
+            color: white;
+           
+        }
+   
+        .left{   display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        }   
+        .left img{
+            float: left;
+            width : 100px;
+            height: 60px;
+            border-radius: 100px;
+        }
+        .left  div{
+            float: left;
+            margin-left: 4px;
+            margin-top: 21px;
+        }
+        .mid{ display: block;
+        width: 40%;
+        margin: 20px auto;
+        }
+        .right{  position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        }
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+        .navbar{
+            list-style: none;
+            /* display: inline-block; */
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+            padding: 34px 23px;
+           
+        }
+        .navbar li a:hover , .navbar li a:active{
+            text-decoration: underline;
+            color: black;
+        }
+       button:hover{
+            color: red;
+            background-color: black ;
+            cursor: pointer;
+        }
+        
+        .forms{
+           
+            width:30%; 
+            margin-left: 45px;
+            margin-top: 104px;
+
+        }
+        .form-container{
+            margin-left: 10px;
+            margin-top: 4px;
+           
+
+        }
+        .form{
+            border-radius: 7px; 
+            height: 25px;
+            width: 200px;
+            margin-bottom: 5px;
+          
+        }
+        .forms .btn{
+            margin-left: 12px;
+            height: 20px;
+            margin-top: 4px;
+            background-color: black;
+            border-radius: 7px;
+            color: white;
+            width: 80px;
+        }
+        .forms .btn:hover{
+            color: red;
+            background-color: black ;
+            cursor: pointer;
+        }
+        
+        .heading{
+            font-size : 20px;
+            margin-left: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- for logo -->
+        <div class="left">
+           <img src="img/pexels-photo-703014.jpeg" alt="">
+           <div> Raman Fitness</div>
+        </div>
+        <!-- for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li class="li">
+                    <a href="#">Home</a>
+                </li>
+    
+                <li class="li">
+                    <a href="#">About us</a>
+                </li>
+    
+                <li class="li">
+                    <a href="#">Services</a>
+                </li>
+    
+                <li  class="li">
+                    <a href="#">Contact us</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- for buttons -->
+        <div class="right">
+      <button class="btn" >Call Us Now</button>
+      <button class="btn" >Email</button>
+
+        </div>
+    </header>
+    
+    <form action="noactiom.php" class="forms">
+        <div class="heading"> Join The Gym Now </div>
+        <div class="form-container">
+        <input type="text" class="form" placeholder="Name">
+    </div>
+    <div class="form-container">
+        <input type="text" class="form" placeholder="Age">
+    </div>
+    <div class="form-container">
+         Male<input type="Radio" class="rform"> Female<input type="Radio" class="rform">
+    </div>
+
+    <div class="form-container">
+        <input type="text" class="form" placeholder="Contact Number">
+    </div>
+    <button class="btn">Submit</button>
+</form>
+</body>
+</html>
